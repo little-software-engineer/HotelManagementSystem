@@ -10,7 +10,7 @@ namespace HotelManagementSystem
 {
     internal class DBConnect
     {
-        private MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database");
+        private MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=hotel_database");
 
         public MySqlConnection GetConnection()
         {

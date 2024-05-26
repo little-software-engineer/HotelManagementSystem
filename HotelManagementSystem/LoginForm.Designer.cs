@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,27 +41,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 263);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxUsername.Location = new System.Drawing.Point(128, 263);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(171, 22);
+            this.textBoxUsername.TabIndex = 1;
+            this.textBoxUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // textBoxPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(78, 336);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 22);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.textBoxPassword.Location = new System.Drawing.Point(128, 336);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(171, 22);
+            this.textBoxPassword.TabIndex = 2;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(23, 248);
+            this.pictureBox2.Location = new System.Drawing.Point(60, 248);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(38, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -72,7 +72,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(23, 320);
+            this.pictureBox3.Location = new System.Drawing.Point(60, 320);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(38, 38);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -83,7 +83,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(78, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(128, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(171, 151);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,9 +93,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(47, 407);
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(49, 402);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(252, 48);
+            this.button1.Size = new System.Drawing.Size(309, 48);
             this.button1.TabIndex = 6;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = true;
@@ -105,7 +106,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 196);
+            this.label1.Location = new System.Drawing.Point(152, 199);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 27);
             this.label1.TabIndex = 7;
@@ -115,15 +116,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 550);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(425, 556);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.pictureBox1);
-            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "LoginForm";
             this.Text = "Hotel System - Login";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -138,8 +140,8 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
