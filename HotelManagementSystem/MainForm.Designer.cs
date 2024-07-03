@@ -29,33 +29,36 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel_main = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.panel_slide = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button_logout = new System.Windows.Forms.Button();
             this.button_room = new System.Windows.Forms.Button();
             this.button_reception = new System.Windows.Forms.Button();
             this.button_guest = new System.Windows.Forms.Button();
             this.button_dashboard = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel_cover = new System.Windows.Forms.Panel();
+            this.panel_slide = new System.Windows.Forms.Panel();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel_main = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel_main.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_cover.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel_main.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.button_logout);
+            this.panel1.Controls.Add(this.panel_slide);
             this.panel1.Controls.Add(this.button_room);
             this.panel1.Controls.Add(this.button_reception);
             this.panel1.Controls.Add(this.button_guest);
@@ -66,126 +69,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(169, 653);
             this.panel1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(169, 100);
-            this.panel3.TabIndex = 0;
-            // 
-            // panel_main
-            // 
-            this.panel_main.Controls.Add(this.panel_slide);
-            this.panel_main.Controls.Add(this.checkBox5);
-            this.panel_main.Controls.Add(this.checkBox4);
-            this.panel_main.Controls.Add(this.checkBox3);
-            this.panel_main.Controls.Add(this.checkBox2);
-            this.panel_main.Controls.Add(this.label2);
-            this.panel_main.Controls.Add(this.checkBox1);
-            this.panel_main.Controls.Add(this.pictureBox2);
-            this.panel_main.Controls.Add(this.label1);
-            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_main.Location = new System.Drawing.Point(169, 0);
-            this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(1047, 653);
-            this.panel_main.TabIndex = 1;
-            this.panel_main.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_main_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(259, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(434, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hotel Management System - Tequila Sunrise";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(27, 477);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(173, 27);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "To clean room";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(23, 441);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 23);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Tasks";
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.ForeColor = System.Drawing.Color.White;
-            this.checkBox2.Location = new System.Drawing.Point(27, 510);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(207, 27);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Surver your guests";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.ForeColor = System.Drawing.Color.White;
-            this.checkBox3.Location = new System.Drawing.Point(27, 543);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(297, 27);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "Empower hotel employees";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.ForeColor = System.Drawing.Color.White;
-            this.checkBox4.Location = new System.Drawing.Point(27, 576);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(351, 27);
-            this.checkBox4.TabIndex = 6;
-            this.checkBox4.Text = "Get creative with lost and found";
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.ForeColor = System.Drawing.Color.White;
-            this.checkBox5.Location = new System.Drawing.Point(27, 619);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(259, 27);
-            this.checkBox5.TabIndex = 7;
-            this.checkBox5.Text = "Have a sense of humor";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // panel_slide
-            // 
-            this.panel_slide.BackColor = System.Drawing.SystemColors.Window;
-            this.panel_slide.Location = new System.Drawing.Point(3, 100);
-            this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(10, 113);
-            this.panel_slide.TabIndex = 8;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::HotelManagementSystem.Properties.Resources.l_ermitage_beverly_hills_bedroom_00_LARESORTSWB22_737e5f583ce945b0bfc12bc9d36bdb68;
-            this.pictureBox2.Location = new System.Drawing.Point(27, 100);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(969, 317);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // button_logout
             // 
@@ -268,6 +151,15 @@
             this.button_dashboard.UseVisualStyleBackColor = true;
             this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(169, 100);
+            this.panel3.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -280,26 +172,147 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // panel_cover
+            // 
+            this.panel_cover.Controls.Add(this.checkBox5);
+            this.panel_cover.Controls.Add(this.checkBox4);
+            this.panel_cover.Controls.Add(this.checkBox3);
+            this.panel_cover.Controls.Add(this.checkBox2);
+            this.panel_cover.Controls.Add(this.label2);
+            this.panel_cover.Controls.Add(this.checkBox1);
+            this.panel_cover.Controls.Add(this.pictureBox2);
+            this.panel_cover.Controls.Add(this.label1);
+            this.panel_cover.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_cover.Location = new System.Drawing.Point(10, 0);
+            this.panel_cover.Name = "panel_cover";
+            this.panel_cover.Size = new System.Drawing.Size(1037, 653);
+            this.panel_cover.TabIndex = 1;
+            this.panel_cover.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_main_Paint);
+            // 
+            // panel_slide
+            // 
+            this.panel_slide.BackColor = System.Drawing.SystemColors.Window;
+            this.panel_slide.Location = new System.Drawing.Point(159, 106);
+            this.panel_slide.Name = "panel_slide";
+            this.panel_slide.Size = new System.Drawing.Size(10, 113);
+            this.panel_slide.TabIndex = 8;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.ForeColor = System.Drawing.Color.White;
+            this.checkBox5.Location = new System.Drawing.Point(27, 609);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(259, 27);
+            this.checkBox5.TabIndex = 7;
+            this.checkBox5.Text = "Have a sense of humor";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.ForeColor = System.Drawing.Color.White;
+            this.checkBox4.Location = new System.Drawing.Point(27, 576);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(351, 27);
+            this.checkBox4.TabIndex = 6;
+            this.checkBox4.Text = "Get creative with lost and found";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.ForeColor = System.Drawing.Color.White;
+            this.checkBox3.Location = new System.Drawing.Point(27, 543);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(297, 27);
+            this.checkBox3.TabIndex = 5;
+            this.checkBox3.Text = "Empower hotel employees";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.ForeColor = System.Drawing.Color.White;
+            this.checkBox2.Location = new System.Drawing.Point(27, 510);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(207, 27);
+            this.checkBox2.TabIndex = 4;
+            this.checkBox2.Text = "Surver your guests";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(23, 441);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 23);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tasks";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
+            this.checkBox1.Location = new System.Drawing.Point(27, 477);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(173, 27);
+            this.checkBox1.TabIndex = 2;
+            this.checkBox1.Text = "To clean room";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::HotelManagementSystem.Properties.Resources.l_ermitage_beverly_hills_bedroom_00_LARESORTSWB22_737e5f583ce945b0bfc12bc9d36bdb68;
+            this.pictureBox2.Location = new System.Drawing.Point(27, 100);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(969, 317);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(259, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(434, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Hotel Management System - Tequila Sunrise";
+            // 
+            // panel_main
+            // 
+            this.panel_main.Controls.Add(this.panel_cover);
+            this.panel_main.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_main.Location = new System.Drawing.Point(169, 0);
+            this.panel_main.Name = "panel_main";
+            this.panel_main.Size = new System.Drawing.Size(1047, 653);
+            this.panel_main.TabIndex = 9;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1216, 653);
-            this.Controls.Add(this.panel_main);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_main);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel_main.ResumeLayout(false);
-            this.panel_main.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_cover.ResumeLayout(false);
+            this.panel_cover.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel_main.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -308,7 +321,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel_main;
+        private System.Windows.Forms.Panel panel_cover;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button_room;
         private System.Windows.Forms.Button button_reception;
@@ -324,5 +337,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button_logout;
+        private System.Windows.Forms.Panel panel_main;
     }
 }

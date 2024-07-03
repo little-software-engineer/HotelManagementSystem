@@ -31,12 +31,23 @@ namespace HotelManagementSystem
         {
             panel_slide.Height = button_dashboard.Height;
             panel_slide.Top = button_dashboard.Top;
+
+            panel_main.Controls.Clear();
+            panel_main.Controls.Add(panel_cover);
         }
 
         private void button_guest_Click(object sender, EventArgs e)
         {
             panel_slide.Height = button_guest.Height;
             panel_slide.Top = button_guest.Top;
+
+            panel_main.Controls.Clear();
+            GuestForm guest = new GuestForm();
+            guest.TopLevel = false;
+            guest.Dock = DockStyle.Fill;
+            guest.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(guest);
+            guest.Show();
 
         }
 
@@ -48,8 +59,17 @@ namespace HotelManagementSystem
 
         private void button_room_Click(object sender, EventArgs e)
         {
+
             panel_slide.Height = button_room.Height;
             panel_slide.Top = button_room.Top;
+
+            panel_main.Controls.Clear();
+            RoomForm room = new RoomForm();
+            room.TopLevel = false;
+            room.Dock = DockStyle.Fill;
+            room.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(room);
+            room.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
