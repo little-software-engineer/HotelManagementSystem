@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_logout = new System.Windows.Forms.Button();
+            this.panel_slide = new System.Windows.Forms.Panel();
             this.button_room = new System.Windows.Forms.Button();
             this.button_reception = new System.Windows.Forms.Button();
             this.button_guest = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_cover = new System.Windows.Forms.Panel();
-            this.panel_slide = new System.Windows.Forms.Panel();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -85,6 +85,14 @@
             this.button_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_logout.UseVisualStyleBackColor = true;
             this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
+            // 
+            // panel_slide
+            // 
+            this.panel_slide.BackColor = System.Drawing.SystemColors.Window;
+            this.panel_slide.Location = new System.Drawing.Point(159, 106);
+            this.panel_slide.Name = "panel_slide";
+            this.panel_slide.Size = new System.Drawing.Size(10, 113);
+            this.panel_slide.TabIndex = 8;
             // 
             // button_room
             // 
@@ -188,14 +196,6 @@
             this.panel_cover.Size = new System.Drawing.Size(1037, 653);
             this.panel_cover.TabIndex = 1;
             this.panel_cover.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_main_Paint);
-            // 
-            // panel_slide
-            // 
-            this.panel_slide.BackColor = System.Drawing.SystemColors.Window;
-            this.panel_slide.Location = new System.Drawing.Point(159, 106);
-            this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(10, 113);
-            this.panel_slide.TabIndex = 8;
             // 
             // checkBox5
             // 

@@ -55,6 +55,14 @@ namespace HotelManagementSystem
         {
             panel_slide.Height = button_reception.Height;
             panel_slide.Top = button_reception.Top;
+
+            panel_main.Controls.Clear();
+            ReservationForm reservation = new ReservationForm();
+            reservation.TopLevel = false;
+            reservation.Dock = DockStyle.Fill;
+            reservation.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(reservation);
+            reservation.Show();
         }
 
         private void button_room_Click(object sender, EventArgs e)
@@ -81,6 +89,10 @@ namespace HotelManagementSystem
         {
             panel_slide.Height = button_logout.Height;
             panel_slide.Top = button_logout.Top;
+
+            LoginForm login = new LoginForm();
+            this.Hide();
+            login.Show();
         }
     }
 }

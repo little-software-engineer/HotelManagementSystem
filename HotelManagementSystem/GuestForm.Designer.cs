@@ -212,7 +212,7 @@
             this.button_clean.FlatAppearance.BorderSize = 0;
             this.button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clean.ForeColor = System.Drawing.Color.White;
-            this.button_clean.Image = global::HotelManagementSystem.Properties.Resources.home__2_;
+            this.button_clean.Image = global::HotelManagementSystem.Properties.Resources.eraser;
             this.button_clean.Location = new System.Drawing.Point(618, 15);
             this.button_clean.Name = "button_clean";
             this.button_clean.Size = new System.Drawing.Size(113, 97);
@@ -227,7 +227,7 @@
             this.button_delete.FlatAppearance.BorderSize = 0;
             this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_delete.ForeColor = System.Drawing.Color.White;
-            this.button_delete.Image = global::HotelManagementSystem.Properties.Resources.home__2_;
+            this.button_delete.Image = global::HotelManagementSystem.Properties.Resources.delete;
             this.button_delete.Location = new System.Drawing.Point(508, 17);
             this.button_delete.Name = "button_delete";
             this.button_delete.Size = new System.Drawing.Size(117, 102);
@@ -291,6 +291,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GuestForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GuestForm";
             this.Load += new System.EventHandler(this.GuestForm_Load);
             this.panel_button.ResumeLayout(false);

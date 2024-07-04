@@ -127,6 +127,7 @@
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hotel System - Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

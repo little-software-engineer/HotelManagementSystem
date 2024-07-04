@@ -70,14 +70,14 @@ namespace HotelManagementSystem
                     Boolean deleteGuest = guest.removeGuest(id);
                     if (deleteGuest)
                     {
-                        MessageBox.Show("guest data remove successfuly", "Guest Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("guest data removed successfully", "Guest Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getTable();
                         // you can clear all text after the delete action
                         button_clean.PerformClick();
                     }
                     else
                     {
-                        MessageBox.Show("ERROR - guest not Remove", "Error delete", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("ERROR - guest not Removed", "Error delete", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (Exception ex)
@@ -146,13 +146,13 @@ namespace HotelManagementSystem
                     Boolean editGuest = guest.editGuest(id, fname, lname, phone, city);
                     if (editGuest)
                     {
-                        MessageBox.Show("Guest data Update successfuly", "Update Successfuly", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Guest data Updated successfully", "Update Successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getTable();
                         button_clean.PerformClick();
                     }
                     else
                     {
-                        MessageBox.Show("ERROR - guest data not update", "Error Update", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("ERROR - guest data not updated", "Error Update", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (Exception ex)

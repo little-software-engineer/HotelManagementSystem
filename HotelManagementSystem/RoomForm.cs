@@ -12,7 +12,6 @@ namespace HotelManagementSystem
 {
     public partial class RoomForm : Form
     {
-
         RoomClass room = new RoomClass();
         public RoomForm()
         {
@@ -48,7 +47,7 @@ namespace HotelManagementSystem
             {
                 if (room.addRoom(no, type, ph, status))
                 {
-                    MessageBox.Show("Room Added Successfuly", "Add Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Room Added Successfully", "Add Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     getRoomList();
                     button_clean.PerformClick();
                 }
@@ -87,13 +86,13 @@ namespace HotelManagementSystem
             {
                 if (room.editRoom(no, type, ph, status))
                 {
-                    MessageBox.Show("Room Update Successfuly", "Update Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Room Updated Successfully", "Update Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     getRoomList();
                     button_clean.PerformClick();
                 }
                 else
                 {
-                    MessageBox.Show("Room Not Update", "Update Room", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Room Not Updated", "Update Room", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
             }
@@ -134,14 +133,14 @@ namespace HotelManagementSystem
                     Boolean deleteGuest = room.removeRoom(id);
                     if (deleteGuest)
                     {
-                        MessageBox.Show("Room remove successfuly", "Room Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Room removed successfully", "Room Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getRoomList();
                         // you can clear all text after the delete action
                         button_clean.PerformClick();
                     }
                     else
                     {
-                        MessageBox.Show("ERROR - room not Remove", "Error delete", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("ERROR - room not Removed", "Error delete", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (Exception ex)
@@ -151,5 +150,7 @@ namespace HotelManagementSystem
 
             }
         }
+
+
     }
 }
