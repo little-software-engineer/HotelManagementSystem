@@ -41,15 +41,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_reservId = new System.Windows.Forms.TextBox();
             this.panel_button = new System.Windows.Forms.Panel();
+            this.button_clean = new System.Windows.Forms.Button();
+            this.button_delete = new System.Windows.Forms.Button();
+            this.button_update = new System.Windows.Forms.Button();
+            this.button_add = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox_roomType = new System.Windows.Forms.ComboBox();
             this.comboBox_roomNo = new System.Windows.Forms.ComboBox();
             this.dateTimePicker_dateIn = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_dateOut = new System.Windows.Forms.DateTimePicker();
-            this.button_clean = new System.Windows.Forms.Button();
-            this.button_delete = new System.Windows.Forms.Button();
-            this.button_update = new System.Windows.Forms.Button();
-            this.button_add = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_reserv)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -172,6 +172,7 @@
             this.textBox_reservId.Name = "textBox_reservId";
             this.textBox_reservId.Size = new System.Drawing.Size(154, 30);
             this.textBox_reservId.TabIndex = 15;
+            this.textBox_reservId.TextChanged += new System.EventHandler(this.textBox_reservId_TextChanged);
             // 
             // panel_button
             // 
@@ -184,54 +185,7 @@
             this.panel_button.Location = new System.Drawing.Point(0, 536);
             this.panel_button.Name = "panel_button";
             this.panel_button.Size = new System.Drawing.Size(952, 117);
-            this.panel_button.TabIndex = 14;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(221, 479);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 25);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Room No:";
-            // 
-            // comboBox_roomType
-            // 
-            this.comboBox_roomType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_roomType.FormattingEnabled = true;
-            this.comboBox_roomType.Location = new System.Drawing.Point(339, 429);
-            this.comboBox_roomType.Name = "comboBox_roomType";
-            this.comboBox_roomType.Size = new System.Drawing.Size(154, 33);
-            this.comboBox_roomType.TabIndex = 28;
-            this.comboBox_roomType.SelectedIndexChanged += new System.EventHandler(this.comboBox_roomType_SelectedIndexChanged);
-            // 
-            // comboBox_roomNo
-            // 
-            this.comboBox_roomNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_roomNo.FormattingEnabled = true;
-            this.comboBox_roomNo.Location = new System.Drawing.Point(339, 479);
-            this.comboBox_roomNo.Name = "comboBox_roomNo";
-            this.comboBox_roomNo.Size = new System.Drawing.Size(154, 33);
-            this.comboBox_roomNo.TabIndex = 29;
-            // 
-            // dateTimePicker_dateIn
-            // 
-            this.dateTimePicker_dateIn.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker_dateIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker_dateIn.Location = new System.Drawing.Point(641, 364);
-            this.dateTimePicker_dateIn.Name = "dateTimePicker_dateIn";
-            this.dateTimePicker_dateIn.Size = new System.Drawing.Size(200, 30);
-            this.dateTimePicker_dateIn.TabIndex = 30;
-            // 
-            // dateTimePicker_dateOut
-            // 
-            this.dateTimePicker_dateOut.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker_dateOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker_dateOut.Location = new System.Drawing.Point(643, 413);
-            this.dateTimePicker_dateOut.Name = "dateTimePicker_dateOut";
-            this.dateTimePicker_dateOut.Size = new System.Drawing.Size(200, 30);
-            this.dateTimePicker_dateOut.TabIndex = 31;
+            this.panel_button.TabIndex = 32;
             // 
             // button_clean
             // 
@@ -292,6 +246,53 @@
             this.button_add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_add.UseVisualStyleBackColor = true;
             this.button_add.Click += new System.EventHandler(this.button_add_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(221, 479);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(99, 25);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Room No:";
+            // 
+            // comboBox_roomType
+            // 
+            this.comboBox_roomType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_roomType.FormattingEnabled = true;
+            this.comboBox_roomType.Location = new System.Drawing.Point(339, 429);
+            this.comboBox_roomType.Name = "comboBox_roomType";
+            this.comboBox_roomType.Size = new System.Drawing.Size(154, 33);
+            this.comboBox_roomType.TabIndex = 28;
+            this.comboBox_roomType.SelectedIndexChanged += new System.EventHandler(this.comboBox_roomType_SelectedIndexChanged);
+            // 
+            // comboBox_roomNo
+            // 
+            this.comboBox_roomNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_roomNo.FormattingEnabled = true;
+            this.comboBox_roomNo.Location = new System.Drawing.Point(339, 479);
+            this.comboBox_roomNo.Name = "comboBox_roomNo";
+            this.comboBox_roomNo.Size = new System.Drawing.Size(154, 33);
+            this.comboBox_roomNo.TabIndex = 29;
+            // 
+            // dateTimePicker_dateIn
+            // 
+            this.dateTimePicker_dateIn.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker_dateIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker_dateIn.Location = new System.Drawing.Point(641, 364);
+            this.dateTimePicker_dateIn.Name = "dateTimePicker_dateIn";
+            this.dateTimePicker_dateIn.Size = new System.Drawing.Size(200, 30);
+            this.dateTimePicker_dateIn.TabIndex = 30;
+            // 
+            // dateTimePicker_dateOut
+            // 
+            this.dateTimePicker_dateOut.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker_dateOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker_dateOut.Location = new System.Drawing.Point(643, 413);
+            this.dateTimePicker_dateOut.Name = "dateTimePicker_dateOut";
+            this.dateTimePicker_dateOut.Size = new System.Drawing.Size(200, 30);
+            this.dateTimePicker_dateOut.TabIndex = 31;
             // 
             // ReservationForm
             // 

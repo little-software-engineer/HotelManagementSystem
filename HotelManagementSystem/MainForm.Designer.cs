@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_logout = new System.Windows.Forms.Button();
-            this.panel_slide = new System.Windows.Forms.Panel();
             this.button_room = new System.Windows.Forms.Button();
             this.button_reception = new System.Windows.Forms.Button();
             this.button_guest = new System.Windows.Forms.Button();
@@ -47,6 +46,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
+            this.panel_slide = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,14 +85,6 @@
             this.button_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_logout.UseVisualStyleBackColor = true;
             this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
-            // 
-            // panel_slide
-            // 
-            this.panel_slide.BackColor = System.Drawing.SystemColors.Window;
-            this.panel_slide.Location = new System.Drawing.Point(159, 106);
-            this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(10, 113);
-            this.panel_slide.TabIndex = 8;
             // 
             // button_room
             // 
@@ -291,6 +283,14 @@
             this.panel_main.Size = new System.Drawing.Size(1047, 653);
             this.panel_main.TabIndex = 9;
             // 
+            // panel_slide
+            // 
+            this.panel_slide.BackColor = System.Drawing.SystemColors.Window;
+            this.panel_slide.Location = new System.Drawing.Point(159, 106);
+            this.panel_slide.Name = "panel_slide";
+            this.panel_slide.Size = new System.Drawing.Size(10, 113);
+            this.panel_slide.TabIndex = 8;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -329,7 +329,6 @@
         private System.Windows.Forms.Button button_dashboard;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel_slide;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
@@ -338,5 +337,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button_logout;
         private System.Windows.Forms.Panel panel_main;
+        private System.Windows.Forms.Panel panel_slide;
     }
 }

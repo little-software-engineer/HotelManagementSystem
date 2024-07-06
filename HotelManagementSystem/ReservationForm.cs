@@ -187,6 +187,9 @@ namespace HotelManagementSystem
             }
         }
 
+        private void textBox_reservId_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
