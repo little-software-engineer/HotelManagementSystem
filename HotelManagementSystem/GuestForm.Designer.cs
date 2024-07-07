@@ -57,7 +57,7 @@
             // 
             // panel_button
             // 
-            this.panel_button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel_button.BackColor = System.Drawing.Color.Sienna;
             this.panel_button.Controls.Add(this.button_clean);
             this.panel_button.Controls.Add(this.button_delete);
             this.panel_button.Controls.Add(this.button_update);
@@ -224,6 +224,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Sienna;
             this.panel1.Controls.Add(this.label6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -275,7 +276,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Sienna;
             this.ClientSize = new System.Drawing.Size(1029, 614);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);

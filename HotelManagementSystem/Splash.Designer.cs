@@ -29,24 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.myprogressBar = new System.Windows.Forms.ProgressBar();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(59, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 22);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Hotel Management System - Tequila Sunrise";
             // 
             // pictureBox1
             // 
@@ -74,7 +62,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(114, 368);
+            this.label2.Location = new System.Drawing.Point(118, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(258, 22);
             this.label2.TabIndex = 6;
@@ -88,7 +76,6 @@
             this.ClientSize = new System.Drawing.Size(496, 463);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.myprogressBar);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Splash";
@@ -102,7 +89,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ProgressBar myprogressBar;
         private System.Windows.Forms.Timer timer;

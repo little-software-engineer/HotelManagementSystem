@@ -18,10 +18,7 @@ namespace HotelManagementSystem
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
 
         private void RoomForm_Load(object sender, EventArgs e)
         {
@@ -36,47 +33,24 @@ namespace HotelManagementSystem
             dataGridView_room.DefaultCellStyle.ForeColor = Color.Black;
         }
 
-        private void button_add_Click(object sender, EventArgs e)
-        {
-            string no = textBox_id.Text;
-            int type = Convert.ToInt32(comboBox_roomType.SelectedValue.ToString());
-            string ph = textBox_phone.Text;
-            string status = radioButton_free.Checked ? "Free" : "Busy";
+     
 
-            try
-            {
-                if (room.addRoom(no, type, ph, status))
-                {
-                    MessageBox.Show("Room Added Successfully", "Add Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    getRoomList();
-                    button_clean.PerformClick();
-                }
-                else
-                {
-                    MessageBox.Show("Room Not Added", "Add Room", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void button_clean_Click(object sender, EventArgs e)
-        {
-            textBox_id.Clear();
-            comboBox_roomType.SelectedIndex = 0;
-            textBox_phone.Clear();
-        }
+    
 
         private void getRoomList()
         {
             dataGridView_room.DataSource = room.getRoomList();
         }
 
-        private void button_update_Click(object sender, EventArgs e)
+      
+
+       
+
+     
+
+        private void button_update_Click_1(object sender, EventArgs e)
         {
+
             string no = textBox_id.Text;
             int type = Convert.ToInt32(comboBox_roomType.SelectedValue.ToString());
             string ph = textBox_phone.Text;
@@ -102,25 +76,43 @@ namespace HotelManagementSystem
             }
         }
 
-        private void dataGridView_room_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void textBox_phone_TextChanged(object sender, EventArgs e)
         {
-            textBox_id.Text = dataGridView_room.CurrentRow.Cells[0].Value.ToString();
-            comboBox_roomType.SelectedValue = dataGridView_room.CurrentRow.Cells[1].Value.ToString();
-            textBox_phone.Text = dataGridView_room.CurrentRow.Cells[2].Value.ToString();
-            //for radio button
-            string rButton = dataGridView_room.CurrentRow.Cells[3].Value.ToString();
-            if (rButton.Equals("Free"))
-            {
-                radioButton_free.Checked = true;
-            }
-            else
-            {
-                radioButton_busy.Checked = true;
-            }
+
         }
 
-        private void button_delete_Click(object sender, EventArgs e)
+        private void button_save_Click(object sender, EventArgs e)
         {
+
+            string no = textBox_id.Text;
+            int type = Convert.ToInt32(comboBox_roomType.SelectedValue.ToString());
+            string ph = textBox_phone.Text;
+            string status = radioButton_free.Checked ? "Free" : "Busy";
+
+            try
+            {
+                if (room.addRoom(no, type, ph, status))
+                {
+                    MessageBox.Show("Room Added Successfully", "Add Room", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    getRoomList();
+                    button_clean.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Room Not Added", "Add Room", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void button_delete_Click_1(object sender, EventArgs e)
+        {
+
             if (textBox_id.Text == "")
             {
                 MessageBox.Show("Required Field - Room No", "Required Field", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -149,8 +141,31 @@ namespace HotelManagementSystem
                 }
 
             }
+
         }
 
+        private void button_clean_Click_1(object sender, EventArgs e)
+        {
+            textBox_id.Clear();
+            comboBox_roomType.SelectedIndex = 0;
+            textBox_phone.Clear();
+        }
 
+        private void dataGridView_room_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox_id.Text = dataGridView_room.CurrentRow.Cells[0].Value.ToString();
+            comboBox_roomType.SelectedValue = dataGridView_room.CurrentRow.Cells[1].Value.ToString();
+            textBox_phone.Text = dataGridView_room.CurrentRow.Cells[2].Value.ToString();
+            //for radio button
+            string rButton = dataGridView_room.CurrentRow.Cells[3].Value.ToString();
+            if (rButton.Equals("Free"))
+            {
+                radioButton_free.Checked = true;
+            }
+            else
+            {
+                radioButton_busy.Checked = true;
+            }
+        }
     }
 }

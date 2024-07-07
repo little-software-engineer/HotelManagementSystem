@@ -106,20 +106,23 @@ namespace HotelManagementSystem
 
         private void button_delete_Click(object sender, EventArgs e)
         {
-            int reserId = Convert.ToInt32(textBox_reservId.Text);
+            string reservIdText = textBox_reservId.Text;
             string rno = comboBox_roomNo.Text;
 
-            try
+            if (int.TryParse(reservIdText, out int reserId))
             {
-                if (reservation.removeReserv(reserId) && reservation.setReservRoom(rno, "Free"))
+                try
                 {
-                    getReservTable();
-                    MessageBox.Show("Deleted Reservation Successfully", "Deleted Reservation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (reservation.removeReserv(reserId) && reservation.setReservRoom(rno, "Free"))
+                    {
+                        getReservTable();
+                        MessageBox.Show("Deleted Reservation Successfully", "Deleted Reservation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error Delete", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error Delete", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

@@ -176,7 +176,7 @@
             // 
             // panel_button
             // 
-            this.panel_button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel_button.BackColor = System.Drawing.Color.Sienna;
             this.panel_button.Controls.Add(this.button_clean);
             this.panel_button.Controls.Add(this.button_delete);
             this.panel_button.Controls.Add(this.button_update);
@@ -298,7 +298,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Sienna;
             this.ClientSize = new System.Drawing.Size(952, 653);
             this.Controls.Add(this.dateTimePicker_dateOut);
             this.Controls.Add(this.dateTimePicker_dateIn);

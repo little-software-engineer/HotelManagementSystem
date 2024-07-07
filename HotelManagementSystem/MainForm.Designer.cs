@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.button_logout = new System.Windows.Forms.Button();
+            this.panel_slide = new System.Windows.Forms.Panel();
             this.button_room = new System.Windows.Forms.Button();
             this.button_reception = new System.Windows.Forms.Button();
             this.button_guest = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
-            this.panel_slide = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,6 +57,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Sienna;
             this.panel1.Controls.Add(this.button_logout);
             this.panel1.Controls.Add(this.panel_slide);
             this.panel1.Controls.Add(this.button_room);
@@ -72,71 +73,84 @@
             // 
             // button_logout
             // 
+            this.button_logout.BackColor = System.Drawing.Color.Sienna;
             this.button_logout.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_logout.FlatAppearance.BorderSize = 0;
             this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_logout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_logout.ForeColor = System.Drawing.Color.White;
             this.button_logout.Image = global::HotelManagementSystem.Properties.Resources.logout__1_;
-            this.button_logout.Location = new System.Drawing.Point(0, 518);
+            this.button_logout.Location = new System.Drawing.Point(0, 543);
             this.button_logout.Name = "button_logout";
-            this.button_logout.Size = new System.Drawing.Size(169, 101);
+            this.button_logout.Size = new System.Drawing.Size(169, 116);
             this.button_logout.TabIndex = 5;
             this.button_logout.Text = "Logout";
             this.button_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_logout.UseVisualStyleBackColor = true;
+            this.button_logout.UseVisualStyleBackColor = false;
             this.button_logout.Click += new System.EventHandler(this.button_logout_Click);
+            // 
+            // panel_slide
+            // 
+            this.panel_slide.BackColor = System.Drawing.SystemColors.Window;
+            this.panel_slide.Location = new System.Drawing.Point(159, 106);
+            this.panel_slide.Name = "panel_slide";
+            this.panel_slide.Size = new System.Drawing.Size(10, 113);
+            this.panel_slide.TabIndex = 8;
             // 
             // button_room
             // 
+            this.button_room.BackColor = System.Drawing.Color.Sienna;
             this.button_room.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_room.FlatAppearance.BorderSize = 0;
             this.button_room.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_room.ForeColor = System.Drawing.Color.White;
             this.button_room.Image = global::HotelManagementSystem.Properties.Resources.bedroom__1_;
-            this.button_room.Location = new System.Drawing.Point(0, 423);
+            this.button_room.Location = new System.Drawing.Point(0, 432);
             this.button_room.Name = "button_room";
-            this.button_room.Size = new System.Drawing.Size(169, 95);
+            this.button_room.Size = new System.Drawing.Size(169, 111);
             this.button_room.TabIndex = 4;
-            this.button_room.Text = "Room";
+            this.button_room.Text = "Rooms";
             this.button_room.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_room.UseVisualStyleBackColor = true;
+            this.button_room.UseVisualStyleBackColor = false;
             this.button_room.Click += new System.EventHandler(this.button_room_Click);
             // 
             // button_reception
             // 
+            this.button_reception.BackColor = System.Drawing.Color.Sienna;
             this.button_reception.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_reception.FlatAppearance.BorderSize = 0;
             this.button_reception.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_reception.ForeColor = System.Drawing.Color.White;
             this.button_reception.Image = global::HotelManagementSystem.Properties.Resources.reception__1_;
-            this.button_reception.Location = new System.Drawing.Point(0, 317);
+            this.button_reception.Location = new System.Drawing.Point(0, 318);
             this.button_reception.Name = "button_reception";
-            this.button_reception.Size = new System.Drawing.Size(169, 106);
+            this.button_reception.Size = new System.Drawing.Size(169, 114);
             this.button_reception.TabIndex = 3;
             this.button_reception.Text = "Reception";
             this.button_reception.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_reception.UseVisualStyleBackColor = true;
+            this.button_reception.UseVisualStyleBackColor = false;
             this.button_reception.Click += new System.EventHandler(this.button_reception_Click);
             // 
             // button_guest
             // 
-            this.button_guest.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button_guest.BackColor = System.Drawing.Color.Sienna;
             this.button_guest.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_guest.FlatAppearance.BorderSize = 0;
             this.button_guest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_guest.ForeColor = System.Drawing.Color.White;
             this.button_guest.Image = global::HotelManagementSystem.Properties.Resources.group;
-            this.button_guest.Location = new System.Drawing.Point(0, 212);
+            this.button_guest.Location = new System.Drawing.Point(0, 206);
             this.button_guest.Name = "button_guest";
-            this.button_guest.Size = new System.Drawing.Size(169, 105);
+            this.button_guest.Size = new System.Drawing.Size(169, 112);
             this.button_guest.TabIndex = 2;
-            this.button_guest.Text = "Guest";
+            this.button_guest.Text = "Guests";
             this.button_guest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_guest.UseVisualStyleBackColor = false;
             this.button_guest.Click += new System.EventHandler(this.button_guest_Click);
             // 
             // button_dashboard
             // 
+            this.button_dashboard.BackColor = System.Drawing.Color.Sienna;
             this.button_dashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_dashboard.FlatAppearance.BorderSize = 0;
             this.button_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -144,11 +158,11 @@
             this.button_dashboard.Image = global::HotelManagementSystem.Properties.Resources.home__2_;
             this.button_dashboard.Location = new System.Drawing.Point(0, 100);
             this.button_dashboard.Name = "button_dashboard";
-            this.button_dashboard.Size = new System.Drawing.Size(169, 112);
+            this.button_dashboard.Size = new System.Drawing.Size(169, 106);
             this.button_dashboard.TabIndex = 1;
             this.button_dashboard.Text = "Dashboard";
             this.button_dashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_dashboard.UseVisualStyleBackColor = true;
+            this.button_dashboard.UseVisualStyleBackColor = false;
             this.button_dashboard.Click += new System.EventHandler(this.button_dashboard_Click);
             // 
             // panel3
@@ -162,11 +176,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::HotelManagementSystem.Properties.Resources.tequilaSunrise__2_2;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(179, 174);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -174,6 +187,7 @@
             // 
             // panel_cover
             // 
+            this.panel_cover.BackColor = System.Drawing.Color.Sienna;
             this.panel_cover.Controls.Add(this.checkBox5);
             this.panel_cover.Controls.Add(this.checkBox4);
             this.panel_cover.Controls.Add(this.checkBox3);
@@ -195,9 +209,9 @@
             this.checkBox5.ForeColor = System.Drawing.Color.White;
             this.checkBox5.Location = new System.Drawing.Point(27, 609);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(259, 27);
+            this.checkBox5.Size = new System.Drawing.Size(290, 27);
             this.checkBox5.TabIndex = 7;
-            this.checkBox5.Text = "Have a sense of humor";
+            this.checkBox5.Text = "Have a movie knowledge";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox4
@@ -217,9 +231,9 @@
             this.checkBox3.ForeColor = System.Drawing.Color.White;
             this.checkBox3.Location = new System.Drawing.Point(27, 543);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(297, 27);
+            this.checkBox3.Size = new System.Drawing.Size(274, 27);
             this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "Empower hotel employees";
+            this.checkBox3.Text = "Happy hour every Friday";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -228,9 +242,9 @@
             this.checkBox2.ForeColor = System.Drawing.Color.White;
             this.checkBox2.Location = new System.Drawing.Point(27, 510);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(207, 27);
+            this.checkBox2.Size = new System.Drawing.Size(243, 27);
             this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Surver your guests";
+            this.checkBox2.Text = "Make a wake-up call";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -249,9 +263,9 @@
             this.checkBox1.ForeColor = System.Drawing.Color.White;
             this.checkBox1.Location = new System.Drawing.Point(27, 477);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(173, 27);
+            this.checkBox1.Size = new System.Drawing.Size(213, 27);
             this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "To clean room";
+            this.checkBox1.Text = "Clean extra rooms";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
@@ -276,20 +290,13 @@
             // 
             // panel_main
             // 
+            this.panel_main.BackColor = System.Drawing.Color.Sienna;
             this.panel_main.Controls.Add(this.panel_cover);
             this.panel_main.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel_main.Location = new System.Drawing.Point(169, 0);
             this.panel_main.Name = "panel_main";
             this.panel_main.Size = new System.Drawing.Size(1047, 653);
             this.panel_main.TabIndex = 9;
-            // 
-            // panel_slide
-            // 
-            this.panel_slide.BackColor = System.Drawing.SystemColors.Window;
-            this.panel_slide.Location = new System.Drawing.Point(159, 106);
-            this.panel_slide.Name = "panel_slide";
-            this.panel_slide.Size = new System.Drawing.Size(10, 113);
-            this.panel_slide.TabIndex = 8;
             // 
             // MainForm
             // 

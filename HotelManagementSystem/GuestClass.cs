@@ -64,7 +64,7 @@ namespace HotelManagementSystem
 
             return table;
         }
-        // now create a function for edit guest
+        // edit Guest function
         public bool editGuest(string id, string fname, string lname, string phone, string city)
         {
             string editQuerry = "UPDATE `guest` SET `GuestFirstName`=@fname,`GuestLastName`=@lname,`GuestPhone`=@ph,`GuestCity`=@ct WHERE `GuestId`=@id";
@@ -91,7 +91,7 @@ namespace HotelManagementSystem
         }
 
         // now create a function to delete the selected guest
-        // we only need the guest id
+        // we only need the guest id for this
 
         public bool removeGuest(string id)
         {

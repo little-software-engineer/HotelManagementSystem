@@ -100,7 +100,7 @@ namespace HotelManagementSystem
         //to create a function for reserv delete
         public bool removeReserv(int id)
         {
-            string insertQuerry = "DELETE FROM `reservation` WHERE `RecervId`=@id";
+            string insertQuerry = "DELETE FROM `reservation` WHERE `ReservId`=@id";
             MySqlCommand command = new MySqlCommand(insertQuerry, connect.GetConnection());
             //@id
             command.Parameters.Add("@id", MySqlDbType.VarChar).Value = id;

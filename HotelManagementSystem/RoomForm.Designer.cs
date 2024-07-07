@@ -64,6 +64,7 @@
             this.dataGridView_room.RowTemplate.Height = 24;
             this.dataGridView_room.Size = new System.Drawing.Size(1023, 224);
             this.dataGridView_room.TabIndex = 0;
+            this.dataGridView_room.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_room_CellContentClick_1);
             // 
             // panel3
             // 
@@ -88,9 +89,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(355, 21);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(305, 25);
+            this.label6.Size = new System.Drawing.Size(304, 25);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Manage Guests - Tequila Sunrise";
+            this.label6.Text = "Manage Rooms - Tequila Sunrise";
             // 
             // panel1
             // 
@@ -125,6 +126,7 @@
             this.textBox_phone.Name = "textBox_phone";
             this.textBox_phone.Size = new System.Drawing.Size(154, 30);
             this.textBox_phone.TabIndex = 19;
+            this.textBox_phone.TextChanged += new System.EventHandler(this.textBox_phone_TextChanged);
             // 
             // label2
             // 
@@ -165,6 +167,7 @@
             this.button_clean.Text = "Clean";
             this.button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_clean.UseVisualStyleBackColor = true;
+            this.button_clean.Click += new System.EventHandler(this.button_clean_Click_1);
             // 
             // button_delete
             // 
@@ -180,6 +183,7 @@
             this.button_delete.Text = "Delete";
             this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click_1);
             // 
             // button_update
             // 
@@ -195,6 +199,7 @@
             this.button_update.Text = "Update";
             this.button_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click_1);
             // 
             // button_save
             // 
@@ -210,10 +215,11 @@
             this.button_save.Text = "Add";
             this.button_save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_save.UseVisualStyleBackColor = true;
+            this.button_save.Click += new System.EventHandler(this.button_save_Click);
             // 
             // panel_button
             // 
-            this.panel_button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel_button.BackColor = System.Drawing.Color.Sienna;
             this.panel_button.Controls.Add(this.button_clean);
             this.panel_button.Controls.Add(this.button_delete);
             this.panel_button.Controls.Add(this.button_update);
@@ -258,7 +264,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.Sienna;
             this.ClientSize = new System.Drawing.Size(1029, 614);
             this.Controls.Add(this.radioButton_busy);
             this.Controls.Add(this.radioButton_free);
