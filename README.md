@@ -2,11 +2,11 @@
 
 ## Overview
 
-The Hotel Management System is a Windows Forms Application built using C# and MySQL. The application provides a user-friendly interface for hotel receptionists to manage guests, rooms, and reservations. 
+The Hotel Management System is a Windows Forms Application built using C# and MySQL. The application provides a user-friendly interface for hotel receptionists to manage guests, rooms, and reservations.
 
 ## Features
 
-- **User Authentication:** Users can log in with existing credentials.
+- **User Authentication:** Users can log in with existing credentials. (If you don't have them, create them in the database)
 - **Dashboard:** Access to a home page with an overview of key information.
 - **Manage Guests:** Add, update, or delete guest information.
 - **Manage Rooms:** Add, update, or delete room details.
