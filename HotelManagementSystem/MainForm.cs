@@ -94,5 +94,10 @@ namespace HotelManagementSystem
             this.Hide();
             login.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
