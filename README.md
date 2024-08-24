@@ -91,4 +91,3 @@ If you would like to contribute to this project, please fork the repository and 
 
 - [MySQL](https://www.mysql.com/)
 - [Visual Studio](https://visualstudio.microsoft.com/)
-- I was inspired by [this tutorial](https://www.youtube.com/watch?v=nmjd600ZT3g)
